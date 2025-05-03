@@ -67,7 +67,7 @@ HTML_TEMPLATE = """
 </html>
 """
 
-@app.route("/", methods=["GET", "POST"])
+@flask_app.route("/", methods=["GET", "POST"])
 def index():
     prediction = None
 
@@ -91,7 +91,7 @@ def index():
     return render_template_string(HTML_TEMPLATE, columns=input_columns, stats=stats, prediction=prediction)
 
 
-@app.route("/predict", methods=["POST"])
+@flask_app.route("/predict", methods=["POST"])
 def predict():
     try:
         data = request.get_json()
@@ -114,4 +114,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    flask_app.run(debug=True)
