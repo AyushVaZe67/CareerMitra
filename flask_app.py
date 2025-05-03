@@ -2,7 +2,7 @@ from flask import Flask, request, render_template_string, jsonify
 import pandas as pd
 import pickle
 
-app = Flask(__name__)
+flask_app = Flask(__name__)
 
 # Load model and preprocessing tools
 with open("mlp_model.pkl", "rb") as f:
