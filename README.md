@@ -31,6 +31,9 @@ An Android-based ML system that predicts suitable **career roles** for users bas
 
 ---
 
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## 👨‍💻 Author
 
 **Ayush VaZe**
